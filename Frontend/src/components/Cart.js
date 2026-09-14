@@ -54,7 +54,7 @@ function Cart({ items, total, onRemove, onUpdateQuantity, onCheckout }) {
 
             <div style={{ textAlign: 'right', minWidth: '100px' }}>
               <div style={{ fontWeight: 'bold', color: '#667eea' }}>
-                ${(item.price * item.quantity).toFixed(2)}
+                ₹{(item.price * item.quantity).toFixed(2)}
               </div>
             </div>
 
