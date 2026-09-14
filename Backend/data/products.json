@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "price": 999,
+    "image": "https://via.placeholder.com/300x200?text=Laptop",
+    "description": "High-performance laptop for work and gaming"
+  },
+  {
+    "id": 2,
+    "name": "Wireless Mouse",
+    "price": 29,
+    "image": "https://via.placeholder.com/300x200?text=Mouse",
+    "description": "Comfortable wireless mouse"
+  },
+  {
+    "id": 3,
+    "name": "USB-C Cable",
+    "price": 15,
+    "image": "https://via.placeholder.com/300x200?text=Cable",
+    "description": "Durable USB-C cable"
+  },
+  {
+    "id": 4,
+    "name": "Keyboard",
+    "price": 79,
+    "image": "https://via.placeholder.com/300x200?text=Keyboard",
+    "description": "Mechanical gaming keyboard"
+  },
+  {
+    "id": 5,
+    "name": "Monitor",
+    "price": 299,
+    "image": "https://via.placeholder.com/300x200?text=Monitor",
+    "description": "27-inch 4K display"
+  },
+  {
+    "id": 6,
+    "name": "Headphones",
+    "price": 149,
+    "image": "https://via.placeholder.com/300x200?text=Headphones",
+    "description": "Noise-canceling headphones"
+  }
+]
