@@ -25,7 +25,7 @@ function Cart({ items, total, onRemove, onUpdateQuantity, onCheckout }) {
           <div key={item.id} className="cart-item">
             <div className="item-details">
               <div className="item-name">{item.name}</div>
-              <div className="item-price">${item.price.toFixed(2)} each</div>
+              <div className="item-price">₹{item.price.toFixed(2)} each</div>
             </div>
 
             <div className="quantity-control">
@@ -70,7 +70,7 @@ function Cart({ items, total, onRemove, onUpdateQuantity, onCheckout }) {
 
       <div className="cart-summary">
         <div>
-          <div className="total">Subtotal: <span className="total-amount">${total.toFixed(2)}</span></div>
+          <div className="total">Subtotal: <span className="total-amount">₹{total.toFixed(2)}</span></div>
           <div style={{ fontSize: '0.85rem', color: '#999', marginTop: '0.5rem' }}>
             Shipping calculated at checkout
           </div>
