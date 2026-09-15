@@ -7,7 +7,7 @@ function Login({ onLogin, onNavigateToRegister, apiUrl }) {
   const [error, setError] = useState('');
 
   // Normalize API URL to strip any accidental trailing slashes
-  const baseUrl = apiUrl ? apiUrl.replace(/\/+$/, '') : 'http://localhost:5000/api';
+  const baseUrl = apiUrl ? apiUrl.replace(/\/+$/, '') : 'https://e-commerce-website-qp8f.onrender.com';
 
   const handleGoogleLogin = useCallback(async (response) => {
     try {

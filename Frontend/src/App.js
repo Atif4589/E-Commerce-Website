@@ -26,7 +26,7 @@ function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [wishlist, setWishlist] = useState([]);
 
-  const API_URL = 'http://localhost:5000/api';
+  const API_URL = 'https://e-commerce-website-qp8f.onrender.com/api';
 
   useEffect(() => {
     // Use mock products data
