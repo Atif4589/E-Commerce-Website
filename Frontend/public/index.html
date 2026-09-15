@@ -6,11 +6,10 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Obsidian - A modern full-stack e-commerce experience built with React, Node.js, and Google OAuth."
+      content="Obsidian - Premium Shopping"
     />
     <title>Obsidian - Premium Shopping</title>
 
-    <!-- Open Graph Meta Tags for LinkedIn / Social Sharing -->
     <meta property="og:title" content="Obsidian - Premium Shopping" />
     <meta
       property="og:description"
@@ -19,25 +18,18 @@
     <meta property="og:url" content="https://obsidian-ecommerce.vercel.app/" />
     <meta property="og:type" content="website" />
 
-    <!-- Script to clean LinkedIn tracking tokens and prevent 404 reload issues -->
     <script>
       (function() {
         if (window.location.search) {
-          const params = new URLSearchParams(window.location.search);
-          if (
-            params.has('trackingId') ||
-            params.has('midToken') ||
-            params.has('trk') ||
-            window.location.search.includes('li_')
-          ) {
-            const cleanUrl = window.location.origin + window.location.pathname;
+          var s = window.location.search;
+          if (s.indexOf("trackingId") !== -1 || s.indexOf("midToken") !== -1 || s.indexOf("trk") !== -1 || s.indexOf("li_") !== -1) {
+            var cleanUrl = window.location.origin + window.location.pathname;
             window.history.replaceState({}, document.title, cleanUrl);
           }
         }
       })();
     </script>
 
-    <!-- Google Identity Services -->
     <script src="https://accounts.google.com/gsi/client" async defer></script>
   </head>
   <body>
@@ -45,4 +37,3 @@
     <div id="root"></div>
   </body>
 </html>
-<>
