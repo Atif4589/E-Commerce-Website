@@ -6,9 +6,23 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Luxe Step - Premium E-Commerce"
+      content="Obsidian - Premium E-Commerce"
     />
-    <title>LS Luxe Step - Premium Shopping</title>
+    <title>Obsidian - Premium Shopping</title>
+
+    <!-- Strip LinkedIn tracking tokens immediately to prevent 404 reload loops -->
+    <script>
+      (function() {
+        if (window.location.search) {
+          const params = new URLSearchParams(window.location.search);
+          if (params.has('trackingId') || params.has('midToken') || params.has('trk') || window.location.search.includes('li_')) {
+            const cleanUrl = window.location.origin + window.location.pathname;
+            window.history.replaceState({}, document.title, cleanUrl);
+          }
+        }
+      })();
+    </script>
+
     <script src="https://accounts.google.com/gsi/client" async defer></script>
   </head>
   <body>
