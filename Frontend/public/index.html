@@ -10,6 +10,10 @@
     />
     <title>Obsidian - Premium Shopping</title>
 
+    <!-- Google OAuth Client ID Configuration -->
+    <meta name="google-signin-client_id" content="YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com" />
+
+    <!-- Open Graph Metadata -->
     <meta property="og:title" content="Obsidian - Premium Shopping" />
     <meta
       property="og:description"
@@ -18,6 +22,7 @@
     <meta property="og:url" content="https://obsidian-ecommerce.vercel.app/" />
     <meta property="og:type" content="website" />
 
+    <!-- Strip Tracking Tokens on Load -->
     <script>
       (function() {
         if (window.location.search) {
@@ -30,6 +35,7 @@
       })();
     </script>
 
+    <!-- Google Identity Services Library -->
     <script src="https://accounts.google.com/gsi/client" async defer></script>
   </head>
   <body>
